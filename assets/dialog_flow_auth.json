@@ -1,3 +1,13 @@
 {
-  //create your own
+  "type": "service_account",
+  "project_id": "ira-xsus",
+  "private_key_id": "3f01d99cf4de78bb3dfeb683b8886214245e36d0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDAPtRI8kdF+SPw\nFdte16j4JVPvt8Z2+e8YRjtQ92P5ynoGf3L+8EIuTAAnzNjYeDyP+wZE53/LHwfP\nE7iBRNBTLKmF8aXh/yZhxMWVfeSiJMxJHDwFKe9mAsl6NBXK+dzSFBO6h/7ZtN/g\nxai4oaj1yNIi0uKFmJL95+ju6OcaOHmyyQYvbyyRSBQPbPLiuwQl6bJxHwkoxQBE\n0p1AR5m6uU4WEdSonjZXVkfiVgoNYf6A+sEzjsXy5tzx938lYeS7isv7dSmLGRSe\nES/bAGXtbnHhm/PByhqW3PVzvSrdeVZQJm6sL3zwtZXZHrc5+pD0wDkHnIaDpJ+t\nfr4V2JqzAgMBAAECggEAOpUq1YvXAlC4jdnrPoyTdgLSADPNa8YgARKt0q+ArMbx\nxnciEOQgFsGcLoSy88w4EFwbffXZsIklNQo6aFIS9bWfdyy7MxIwnQx8dWCmwm5a\nPlE3TQ+JX1msEew7U94uV2o81NPKaoc+zd0N3C2PMk7fEjOXScTDzlHUXrFkc02I\n9ihVKiIAKaVPc4zQMWs7V+UWAmlYATrNA85JpY4jj5NfbI+0MQ1zixA65VXBNLZD\nf/0H5lvINvetyHx41/Zir2Y9x8WwWhr9xur5rsis5i18KQcC6Y5Ug0tD6Q7KS1WW\nABOAjIMqaLvyQ29DfE/zsMLrOpx+/JVpPbSG3FTZCQKBgQDsVeue0Mp3wX7DTaVI\novp62IHLhuqa64O8ogNAGS9Bmq3h4BvEtdS/5qXPupbfd2bDQAM4q5JgNu+RSp1a\n2dtJiS4twPPiDsich8KKq1/XkP+R6LYk1/q6sgYgHzhy/KLVLdCCrQOtJQX+8Bgv\n8ie5Ob0C6+e38QDuXLrzupRG1wKBgQDQPcNgv9TwWIDdEiy65bwKQXdcycg19VUU\nH11FzJyHLEzPcLhONh1g2Nsn4MZTM7VD0Dh8jbuUS2hIIGHHBXtrjYQFJhd/qMcR\ncysQ5BHgYFM1QrR1HKH1G2knpaAesc7cOjKI2EU4Gg3ex3j2A1DCd9kgyLwuycEW\ngQEOWR37hQKBgHLb8y51VOFM5fmvQ9QAeXG4xaQPxvdR3O2RY7kERGZC8Z0kWPqK\nUIKPayiBC5BBrGzaMHabVAF00YuwUrdzx9J+XDYaX60O+Eqy5EaWsXbH3p2gFt3j\nJdUUbkuwQLQJum2W3Y6U3YOJydc0At1SeCHaQNUpp61K8OPnp2iK1kNzAoGADrVe\nGHZUPwmxSGwhNq5FYuAO40HpX05NzRcOCoESSUXqwvguPG/8ETwf9qgcugG7+uc5\nJisIpcfRvM50uY78kbM0MPzoyf6M2QGueAnz7UpAdlGY13DHS7285qz/K0vZ1ZpS\nuXG1KepFMogaVh4T1TiL4JHtIMzlU4aXIYFP6dUCgYBeXMe+KouwSja+VyVt8x96\nFipEF27vXRNkHOuIm7PkJ3t8J7oEnwGFndNRdZ5gMMKg6Hc4YS2DuWisYONwMQMe\n8aIPMQlW5P+jAtFaU7jq1EA5RJTmeMrk7Jp0C6Vsffw2xi3YuXH9TXiubDe1tMVS\nKnedXJGpA/zWafn+J74egg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "chatira@ira-xsus.iam.gserviceaccount.com",
+  "client_id": "114794955008840239653",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/chatira%40ira-xsus.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
 }
