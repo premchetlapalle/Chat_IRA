@@ -142,7 +142,7 @@ class _Home_ScreenState extends State<Home_Screen> {
               SizedBox(height:3,),
               //chatbot screen
               Container(
-                height: mq.height * 0.1,
+                
                 child: InkWell(
                   onTap: () {
                     Navigator.push(
