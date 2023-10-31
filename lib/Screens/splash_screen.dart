@@ -1,8 +1,11 @@
+// ignore_for_file: camel_case_types
+
 import 'package:chat_apk/Screens/home_screen.dart';
 import 'package:chat_apk/Screens/login%20&%20signup%20Screens/login_screen.dart';
 import 'package:chat_apk/main.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class Splash_Screen extends StatefulWidget {
   const Splash_Screen({Key? key}) : super(key: key);
@@ -21,7 +24,7 @@ class _Splash_ScreenState extends State<Splash_Screen>
     super.initState();
 
     _animationController =
-        AnimationController(vsync: this, duration: Duration(seconds: 3));
+        AnimationController(vsync: this, duration: const Duration(milliseconds: 2700));
     _animation = Tween<double>(begin: 0.0, end: 2.0).animate(_animationController);
 
     _animationController.forward();
@@ -34,6 +37,11 @@ class _Splash_ScreenState extends State<Splash_Screen>
   }
 
   Future<void> checkAuthentication() async {
+    SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
+    SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(
+            systemNavigationBarColor: Colors.white,
+            statusBarColor: Colors.red));
     if (FirebaseAuth.instance.currentUser != null) {
       Navigator.pushReplacement(
           context, MaterialPageRoute(builder: (_) => const Home_Screen()));

@@ -51,6 +51,7 @@ class _Chat_ScreenState extends State<Chat_Screen> {
           child: Scaffold(
             backgroundColor: const Color(0xffFCECE9),
             appBar: AppBar(
+              backgroundColor: Colors.red,
               automaticallyImplyLeading: false,
               flexibleSpace: _appBar(),
             ),
@@ -153,8 +154,8 @@ class _Chat_ScreenState extends State<Chat_Screen> {
                     onPressed: () => Navigator.pop(context),
                     icon: const Icon(
                       Icons.arrow_back,
-                        color: Colors.white,
-                        size: 28,
+                      color: Colors.white,
+                      size: 28,
                     )),
                 //user profile picture
                 ClipRRect(
@@ -165,8 +166,13 @@ class _Chat_ScreenState extends State<Chat_Screen> {
                     imageUrl:
                         list.isNotEmpty ? list[0].image : widget.user.image,
                     // placeholder: (context, url) => CircularProgressIndicator(),
-                    errorWidget: (context, url, error) =>
-                        const CircleAvatar(child: Icon(CupertinoIcons.person)),
+                    errorWidget: (context, url, error) => const CircleAvatar(
+                      backgroundColor: Color(0xffb2D65E7),
+                        child: Icon(
+                      CupertinoIcons.person,
+                      color: CupertinoColors.white,
+                      size: 28,
+                    )),
                   ),
                 ),
                 const SizedBox(

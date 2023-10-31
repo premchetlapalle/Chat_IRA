@@ -189,7 +189,7 @@ class _Profile_ScreenState extends State<Profile_Screen> {
                   ),
                   SizedBox(
                     width: mq.width,
-                    height: mq.height * .045,
+                    height: mq.height * .055,
                   ),
 
                   // logout button
@@ -199,7 +199,7 @@ class _Profile_ScreenState extends State<Profile_Screen> {
                     children: [
                       const Text(
                         "Click here to",
-                        style: TextStyle(fontSize: 23),
+                        style: TextStyle(fontSize: 23,color: Color(0xffb4E342E)),
                       ),
                       TextButton.icon(
                         onPressed: () async {

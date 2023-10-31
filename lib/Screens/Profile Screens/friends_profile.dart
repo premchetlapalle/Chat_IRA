@@ -7,7 +7,6 @@ import 'package:chat_apk/others/date_format.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-
 class Friend_Profile extends StatefulWidget {
   const Friend_Profile({super.key, required this.user});
   final ChatUser user;
@@ -25,22 +24,26 @@ class _Friend_ProfileState extends State<Friend_Profile> {
           appBar: AppBar(
             title: Text(widget.user.name),
           ),
-          floatingActionButton: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text('Joined On : ',
-                  style: TextStyle(
-                      color: Colors.black87,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w500)),
-              Text(
-                DateFormat.getLastMessageTime(
-                    context: context,
-                    time: widget.user.createdAt,
-                    showYear: true),
-                style: const TextStyle(color: Colors.black54, fontSize: 20),
-              ),
-            ],
+          floatingActionButton: Padding(
+            padding: const EdgeInsets.only(bottom: 8),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text('Joined On : ',
+                    style: TextStyle(
+                        color: Color(0xff263238),
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500)),
+                Text(
+                  DateFormat.getLastMessageTime(
+                      context: context,
+                      time: widget.user.createdAt,
+                      showYear: true),
+                  style:
+                      const TextStyle(color: Color(0xff546E7A), fontSize: 20),
+                ),
+              ],
+            ),
           ),
           body: Padding(
             padding: EdgeInsets.symmetric(horizontal: mq.width * 0.05),
@@ -61,7 +64,12 @@ class _Friend_ProfileState extends State<Friend_Profile> {
                       imageUrl: widget.user.image,
                       // placeholder: (context, url) => CircularProgressIndicator(),
                       errorWidget: (context, url, error) => const CircleAvatar(
-                          child: Icon(CupertinoIcons.person)),
+                          backgroundColor: Color(0xffbff4d4d),
+                          child: Icon(
+                            CupertinoIcons.person,
+                            size: 120,
+                            color: CupertinoColors.white,
+                          )),
                     ),
                   ),
                   SizedBox(
@@ -70,7 +78,10 @@ class _Friend_ProfileState extends State<Friend_Profile> {
                   ),
                   Text(
                     widget.user.email,
-                    style: const TextStyle(color: Colors.black87, fontSize: 20),
+                    style: const TextStyle(
+                        color: Color(0xff263238),
+                        fontSize: 20,
+                        fontWeight: FontWeight.w500),
                   ),
                   SizedBox(
                     width: mq.width,
@@ -81,12 +92,36 @@ class _Friend_ProfileState extends State<Friend_Profile> {
                     children: [
                       const Text('About : ',
                           style: TextStyle(
-                              color: Colors.black87,
+                              color: Color(0xff263238),
                               fontSize: 20,
                               fontWeight: FontWeight.w500)),
                       Text(
                         widget.user.about,
-                        style: const TextStyle(color: Colors.black54, fontSize: 20),
+                        style: const TextStyle(
+                            color: Color(0xff546E7A), fontSize: 20),
+                      ),
+                    ],
+                  ),
+                  SizedBox(
+                    width: mq.width,
+                    height: mq.height * .04,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text('Last Active : ',
+                          style: TextStyle(
+                              color: Color(0xff263238),
+                              fontSize: 20,
+                              fontWeight: FontWeight.w500)),
+                      Text(
+                        DateFormat.getLastActiveTime(
+                            context: context,
+                            lastActive: widget.user.lastActive),
+                        style: const TextStyle(
+                          color: Color(0xff546E7A),
+                          fontSize: 20,
+                        ),
                       ),
                     ],
                   ),

@@ -10,7 +10,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 
-
 class ChatCard extends StatefulWidget {
   final ChatUser user;
   const ChatCard({super.key, required this.user});
@@ -51,7 +50,7 @@ class _ChatCardState extends State<ChatCard> {
                 return ListTile(
                     //user profile picture
                     leading: InkWell(
-                      onTap: (){
+                      onTap: () {
                         showDialog(
                             context: context,
                             builder: (_) => ProfileDialog(user: widget.user));
@@ -64,12 +63,15 @@ class _ChatCardState extends State<ChatCard> {
                           imageUrl: widget.user.image,
                           errorWidget: (context, url, error) =>
                               const CircleAvatar(
-                                  child: Icon(CupertinoIcons.person)),
+                                  backgroundColor: Color(0xffbff4d4d),
+                                  child: Icon(
+                                    CupertinoIcons.person,
+                                    color: CupertinoColors.white,
+                                    size: 26,
+                                  )),
                         ),
                       ),
                     ),
-
-
                     title: Text(widget.user.name),
                     subtitle: Text(
                       _message != null
