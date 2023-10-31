@@ -106,7 +106,7 @@ class API {
           headers: {
             HttpHeaders.contentTypeHeader: 'application/json',
             HttpHeaders.authorizationHeader:
-                'key=AAAAxfIHSho:APA91bH82cYUuptikzTXbUg19_9oG-pVfF0loRXbmNSbDJX5mfid0IEBJ7ZBc2Cq9cqftc5I1IJg0HLjZWrDgd2ostF6FcgVjvLU3V0ee5520TkHBPrv7qoxqrbbNevQJmdcfsA3DN5T'
+                'key=Enter Your Key here'
           },
           body: jsonEncode(body));
       log('Response status: ${res.statusCode}');
