@@ -1,9 +1,6 @@
-In lib > API > api.dart, on line 109,
-I have removed my Cloud Messaging API (Legacy) server key. Please add your key here
-To Know your key, Follow these steps:
-1. Open Firebase project settings.
-2. Click on Cloud Messaging.
-3. create server key if you don' have.
+Develop a Chatting APK application that allows users to communicate in real-time.
+![image](https://github.com/premchetlapalle/Chat_IRA/assets/130395806/dc3a1f00-5c46-486f-a590-01b2caef3cdc)
+
 
 ![Screenshot 2023-11-01 112621](https://github.com/premchetlapalle/Chat_IRA/assets/130395806/e084509d-741d-4861-8288-0849e4e79c2a)
 ![Screenshot 2023-11-01 112646](https://github.com/premchetlapalle/Chat_IRA/assets/130395806/ebba4e63-aa4c-400d-a485-fa93bcfb48e5)
