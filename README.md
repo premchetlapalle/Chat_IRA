@@ -1,4 +1,6 @@
-Develop a Chatting APK application that allows users to communicate in real-time.
+Built an app that allows users to communicate in real-time.
+This Apk includes an AI chat bot called IRA (Intelligent Robot Assistance) designed to have meaningful conversation with users.
+
 
 
 
