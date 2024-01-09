@@ -1,5 +1,5 @@
 Develop a Chatting APK application that allows users to communicate in real-time.
-![image](https://github.com/premchetlapalle/Chat_IRA/assets/130395806/dc3a1f00-5c46-486f-a590-01b2caef3cdc)
+
 
 
 ![Screenshot 2023-11-01 112621](https://github.com/premchetlapalle/Chat_IRA/assets/130395806/e084509d-741d-4861-8288-0849e4e79c2a)
